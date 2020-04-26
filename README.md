@@ -3,8 +3,8 @@
 
 * ConnectionPool is a singleton implementation which provides the following:
 
-  ** get_connection() : Retrieves a connection from the available connections.
-  ** release_connection(connection): Releases a connection to the pool.
+        get_connection() : Retrieves a connection from the available connections.
+        release_connection(connection): Releases a connection to the pool.
 
 ## Usage
     from lib.ConnectionPool import ConnectionPool
@@ -20,4 +20,4 @@
     ConnectionPool.metrics()
     
 ## Metrics:
--- ConnectionPool.metrics(): It provides the list of available_connections and inuse_connections.
+    ConnectionPool.metrics(): It provides the list of available_connections and inuse_connections.
