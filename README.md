@@ -1,4 +1,7 @@
 # ConnectionPool
+
+Library for connection pool management. Provides simple to use connection pool for clients to retrieve and release connections.
+
 * Initializes the queue of connections based upon configured CONNECTION_COUNT.
 
 * ConnectionPool is a singleton implementation which provides the following:
@@ -6,7 +9,7 @@
         get_connection() : Retrieves a connection from the available connections.
         release_connection(connection): Releases a connection to the pool.
 
-## Usage
+## Usage:
     from lib.ConnectionPool import ConnectionPool
 
     connection_pool = ConnectionPool.get_instance()
@@ -21,3 +24,6 @@
     
 ## Metrics:
     ConnectionPool.metrics(): It provides the list of available_connections and inuse_connections.
+
+## Configuration:
+    Supports various configuration parameters for connection pool.     
